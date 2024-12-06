@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Tolken - Enviar E-mail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+        .card-abrir-chamado {
+            padding: 30px 0 0 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://firebasestorage.googleapis.com/v0/b/projeto-60c79.appspot.com/o/logo-prefeitura.png?alt=media&token=cc342bb3-a2b1-4660-beee-bcb80407c13a" width="50" height="50" alt="Logo da Prefeitura">
+        </a>
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/projeto-60c79.appspot.com/o/email.png?alt=media&token=686d5fd5-feed-4faa-afd1-158db978c9f8" class="img-fluid" width="50" height="50">
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+
+            <div class="card-abrir-chamado">
+                <div class="card">
+                    <div class="card-header">
+                        Enviar E-MAIL
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <form method="post">
+
+                                    <div class="form-group">
+                                        <label>Token</label>
+                                        <div class="input-group">
+                                            <input name="token" type="text" class="form-control" placeholder="Token"
+                                                readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Digite seu e-mail</label>
+                                        <input name="para" type="text" class="form-control" placeholder="Solicitação">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Escola</label>
+                                        <select id="escola" name="escola" class="form-control">
+                                            <option>CEI do Bairro Águia Dourada</option>
+                                            <option>CEI do Bairro Jardim das Rosas</option>
+                                            <option> CEI DO BAIRRO ÁGUIA DOURADA </option>
+                                            <option> CEI DO BAIRRO JARDIM DAS ROSAS </option>
+                                            <option> CEI DO BAIRRO PALMEIRAS </option>
+                                            <option> CEI DO BAIRRO SERRA DOURADA </option>
+                                            <option> CEI DO BAIRRO SOL NASCENTE </option>
+                                            <option> CEI PROFESSORA HELEN DE ABREU (MADUREIRA) </option>
+                                            <option> CEI FAZENDINHA DO GUINHO </option>
+                                            <option> E. M. PRÓ-INFÂNCIA DO JARDIM MONTANHÊS </option>
+                                            <option> CENTRO SOLIDÁRIO DE EDUCAÇÃO INFANTIL </option>
+                                            <option> E. M. PRÓ-INFÂNCIA DO BAIRRO APARECIDA </option>
+                                            <option> E. M. PRÓ- INFÂNCIA DO BAIRRO SÃO PEDRO </option>
+                                            <option> CEI CAIQUINHO </option>
+                                            <option> E. M. BONEQUINHO DOCE </option>
+                                            <option> E. M. CORONEL DUVAL DE BARROS </option>
+                                            <option> E. M. CRISTIANO PACÍFICO FERREIRA </option>
+                                            <option> E. M. DA VILA IDEAL/ SERRA DOURADA </option>
+                                            <option> EJA VILA IDEAL </option>
+                                            <option> E. M. DE BARREIRINHO </option>
+                                            <option> E. M. DO BAIRRO ÁGUIA DOURADA </option>
+                                            <option> E. M. DO BAIRRO ALVORADA </option>
+                                            <option> E. M. DO BAIRRO DUVAL DE BARROS (MADUREIRA) </option>
+                                            <option> E. M. DO BAIRRO JARDIM DAS ROSAS </option>
+                                            <option> E. M. PROFESSORA PETRINA (JARDIM MONTANHÊS) </option>
+                                            <option> E. M. DO BAIRRO JARDIM MONTREAL/OURO NEGRO </option>
+                                            <option> E. M. DO BAIRRO MORADA DA SERRA </option>
+                                            <option> E. M. DO BAIRRO PALMEIRAS </option>
+                                            <option> E. M. DO BAIRRO PETROVALE </option>
+                                            <option> E. M. DO BAIRRO SERRA DOURADA </option>
+                                            <option> E. M. DO BAIRRO SOL NASCENTE </option>
+                                            <option> PRO INFÂNCIA JARDIM MONTREAL (OURO NEGRO) </option>
+                                            <option> E. M. MARIA DAS MERCÊS AGUIAR (CRISTO) </option>
+                                            <option> E. M. MARIA JOSÉ CAMPOS DIAS (ROLA MOÇA) </option>
+                                            <option> E. M. MARIA JOSÉ DE AGUIAR </option>
+                                            <option> E. M. PREFEITO JOSÉ WANDERLEY </option>
+                                            <option> E. M. PROF.ª CARMELITA C. GARCIA - CAIC </option>
+                                            <option> E. M. PROF.ª MARIA HELENA DE AGUILAR </option>
+                                            <option> E. M. PROF.ª MARIA MARTINS DE MORAES (CASCATA) </option>
+                                            <option> E. M. PROF.ª MARINETE DAMASCENO PINHEIRO </option>
+                                            <option> E. M SAMBÓDROMO </option>
+                                            <option> CAMPUS IFMG </option>
+                                            <option> CABI </option>
+                                            <option> ASSISTENCIA AO EDUCANDO </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Assunto</label>
+                                        <select id="assunto" name="assunto" class="form-control">
+                                            <option>Toner/Impressora</option>
+                                            <option>Hardware</option>
+                                            <option>Software</option>
+                                            <option>Rede</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Descrição</label>
+                                        <textarea name="mensagem" class="form-control" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="row mt-5">
+                                        <div class="col-6">
+                                            <a class="btn btn-lg btn-outline-dark btn-block" href="index.html">Limpar</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <button id="submit" class="btn btn-lg btn-info btn-block" type="submit">Enviar</button>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("FOJJhnXq_t7Eq5oNZ"); //please encrypted user id for malicious attacks
+    })();
+        var serviceID="service_bf2r1j8"
+        var templateID="template_8uvkk7k"
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); 
+            //ENVIANDO E-MAIL PRO USUÁRIO
+            var params={//Para o usuário que mandou o e-mail
+                sendername: "infocentroseme@gmail.com",
+                to: document.querySelector('[name="para"]').value, // Usando o e-mail obtido do campo 'para' do formulário
+                subject: document.querySelector('[name="escola"]').value, // Usando o assunto obtido do campo 'assunto' do formulário
+                message: "Você abriu um chamado de: "
+                +document.querySelector('[name="assunto"]').value
+                +". Em breve atenderemos sua solicitação!.\n Seu código é: "
+                +document.querySelector('[name="token"]').value // Usando a mensagem obtida do campo 'mensagem' do formulário
+            }
+            
+            emailjs.send(serviceID, templateID, params)//Enviando pro usuário
+
+            //ENVIANDO E-MAIL PRA INFORMÁTICA
+            params={//Para o usuário que mandou o e-mail
+                sendername: "infocentroseme@gmail.com",
+                to:         "infocentroseme@gmail.com", // Usando o e-mail obtido do campo 'para' do formulário
+                subject: document.querySelector('[name="escola"]').value, // Usando o assunto obtido do campo 'assunto' do formulário
+                message: "Um novo chamado foi aberto sobre:\n"
+                +document.querySelector('[name="assunto"]').value+"\n"
+                +document.querySelector('[name="mensagem"]').value 
+                +".\n o código é: \t"
+                +document.querySelector('[name="token"]').value // Usando a mensagem obtida do campo 'mensagem' do formulário
+            }
+
+            emailjs.send(serviceID, templateID, params)//Enviando pro usuário
+            .then(res=>{
+                alert("Enviado com sucesso");
+            }
+            )
+        });
+    </script>
+    
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBKQ-TRXGmSGcPLeFgkSfrzpoKLmMWnXRo",
+            authDomain: "projeto-60c79.firebaseapp.com",
+            projectId: "projeto-60c79",
+            storageBucket: "projeto-60c79.appspot.com",
+            messagingSenderId: "77925391289",
+            appId: "1:77925391289:web:9cdadfcac168b15e04f468",
+            measurementId: "G-P01FG7GKG2"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        // Obtenha uma referência para o botão de envio
+        const enviarButton = document.getElementById('submit');
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+    event.preventDefault(); 
+        // Obtenha os valores do campo "token" e "para" do formulário
+        const email = document.querySelector('[name="para"]').value;
+        const escola = document.querySelector('[name="escola"]').value;
+        const mensagem = document.querySelector('[name="mensagem"]').value;
+        const token = document.querySelector('[name="token"]').value;
+        const assunto = document.getElementById('assunto').value;
+
+
+        // Referência para onde você deseja adicionar dados no Firebase Realtime Database
+        const dataRef = ref(database, token);
+
+        // Dados que você deseja adicionar
+        const newData = {
+            email: email,
+            escola: escola,
+            mensagem: mensagem,
+            assunto: assunto,
+            token:token
+        };
+
+        // Adicionando dados ao Firebase Realtime Database
+        set(dataRef, newData)
+            .then(() => {
+                console.log("Dados adicionados com sucesso.");
+            })
+            .catch((error) => {
+                console.error("Erro ao adicionar dados:", error);
+            });
+        });
+            
+    // Dados que você deseja enviar para o html
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
